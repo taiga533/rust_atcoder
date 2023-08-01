@@ -14,6 +14,7 @@ fn main() {
     let alphabets = vec!['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     let mut alphabetNex: Vec<HashMap<&char, isize>> = vec![hashmap![];n+1];
 
+    // 辞書順の最小を求める
     for (idx, c) in s.iter().enumerate().rev() {
         for _ in alphabets.iter() {
             alphabetNex[idx] = alphabetNex[idx+1].clone();
